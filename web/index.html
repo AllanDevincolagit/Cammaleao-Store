@@ -40,53 +40,122 @@
             </nav>
         </header>
 
+        <style>
+            .mySlides {display: none;}     
+            /* Slideshow container */
+            .slideshow-container {
+              max-width: 100%;
+              transition: 0.7s ease;
+              position: relative;
+              margin: auto;
+            }
+            
+            /* Caption text */
+            .text {
+              color: #f2f2f2;
+              font-size: 15px;
+              padding: 8px 12px;
+              position: absolute;
+              bottom: 8px;
+              width: 100%;
+              text-align: center;
+              transition: 0.7s ease;
+            }
+            
+            /* Number text (1/3 etc) */
+            .numbertext {
+              color: #f2f2f2;
+              font-size: 12px;
+              padding: 8px 12px;
+              position: absolute;
+              top: 0;
+            }
+            
+            /* The dots/bullets/indicators */
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #87C65C;
+                border-radius: 50%;
+                display: inline-block;
+                transition: 0.7s ease;
+            }
+            
+            .active {
+              background-color: #717171;
+            }
+            
+            /* Fading animation */
+            .fade {
+              -webkit-animation-name: fade;
+              -webkit-animation-duration: 1.5s;
+              animation-name: fade;
+              animation-duration: 1.5s;
+            }
+            
+            @-webkit-keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            @keyframes fade {
+              from {opacity: .4} 
+              to {opacity: 1}
+            }
+            
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+              .text {font-size: 11px}
+            }
+        </style>
+
         <main>
 
-            <div class="main-row">
-                <div class="main-colSlide">
+                <div class="slideshow-container">
+    
+                    <div class="mySlides fade">
+                      <!-- <div class="numbertext">1 / 3</div> -->
+                      <img src="imgs/bannerPequeno.jpeg" style="width:100%; height:430px; transition: 0.7s ease;">
+                      <!-- <div class="text">Caption Text</div> -->
+                    </div>
                     
-                    <div class="slides">
-                        <!--Slide radio buttons-->
-                        <input type="radio" name="radio-btn" id="radio1">
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-                        <input type="radio" name="radio-btn" id="radio4">
-                        <!--Final slide radio buttons-->
-
-                        <!--Slide images-->
-                        <div class="slide first">
-                            <img src="imgs/bannerPequeno.jpeg" alt="Primeira imagem do slide da loja cammaleao">
-                        </div>
-                        <div class="slide">
-                            <img src="imgs/ESCUDO-VASCO-RGB-1-450x450.png" alt="Primeira imagem do slide da loja cammaleao">
-                        </div>
-                        <div class="slide">
-                            <img src="https://img.elo7.com.br/product/zoom/1373C13/adesivo-carros-relampago-mcqueen-relampago-mcqueen.jpg" alt="Primeira imagem do slide da loja cammaleao">
-                        </div>
-                        <div class="slide">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/2560px-Flag_of_Albania.svg.png" alt="Primeira imagem do slide da loja cammaleao">
-                        </div>
-                        <!--Final das imagens do carrosel-->
-
-                        <!--Começo botões clicaveis usuário-->
-                        <div class="navigation-auto">
-                            <div class="auto-btn1"></div>
-                            <div class="auto-btn2"></div>
-                            <div class="auto-btn3"></div>
-                            <div class="auto-btn3"></div>
-                        </div>
-                        <!--Final botões clicáveis-->
-                            
+                    <div class="mySlides fade">
+                      <!-- <div class="numbertext">2 / 3</div> -->
+                      <img src="imgs/ESCUDO-VASCO-RGB-1-450x450.png" style="width:100%; height:430px; transition: 0.7s ease;">
+                      <!-- <div class="text">Caption Two</div> -->
                     </div>
-
-                    <div class="manual-navigation">
-                        <label for="radio1" class="manual-btn"></label>
-                        <label for="radio2" class="manual-btn"></label>
-                        <label for="radio3" class="manual-btn"></label>
-                        <label for="radio4" class="manual-btn"></label>
-                    </div>
+                    
                 </div>
-            </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                     <!-- <span class="dot"></span>   -->
+                </div>
+
+                <script>
+                    var slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                </script><br>
 
             <div class="main-row">
                 <div class="main-col-Um">
