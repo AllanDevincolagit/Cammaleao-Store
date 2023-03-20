@@ -1,61 +1,70 @@
 .main-col-cards{
-    width:25%;
+    width:20%;
+    height: 500px;
+    margin:25px;
     padding: 0 15px;
-}
-
-.card-subprods{
-    background-image: linear-gradient(#87C65C,#5D994D);
-    overflow: hidden;
-    width: 60%;
-    height: 300px;
-    margin-top: 7%;
-    margin-left: 25%;
     border-radius: 25px;
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    background-image: linear-gradient(#87C65C,#5D994D);
+}
+
+.card-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img{
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+.card-body{
+    height: 170px;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-local{
+    font-size: 16px;
+    margin:10px 0;
+}
+
+.card-titulo{
+    font-size: 22px;
+    margin: 15px 0;
+}
+
+.card-texto{
+    font-size: 12px;
+    width: 200px;
+    margin: 0 auto;
+    
+}
+
+.card-footer{
+    margin-top: 55px;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: all ease-in 0,1s;
+    background-color: black;
+    border-radius: 25px;
+    width: 100%;
+    
+}
+
+.card-footer a{
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+    font-weight: 600;
     color: white;
-    box-shadow: rgba(0, 0, 0, 0.35);
 }
 
-.card-subprods:hover{
-    transition: ease-out 0.2s;
+.card-footer a:hover{
+    background-color:white;
+    color: black;
+    border-radius: 25px;
 }
-
-.card-subprods .img_cardCamiseta{
-    background-image: url("../imgs/camiseta_pronta.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 360px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: .7;
-}
-
-.card-subprods:hover .img_cardCamiseta{
-    opacity: 1;
-    width: 380px;
-    transition: ease-out 0.2s;
-}
-
-.card-subprods .img_cardPersonalizado{
-    background-image: url("../imgs/produto_personalizado.jpg");
-    background-position: center;
-    background-size: cover;
-    width: 360px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: .7;
-}
-
-
-
-
-
