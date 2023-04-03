@@ -7,11 +7,10 @@
 
 .main-col-prodEsp{
     width:50%;
-    height: 600px;
     padding: 0 15px;
     text-align:center;
     border-radius: 25px;
-    margin-top: 40px;
+    border-top: 5px;
 }
 
 h3 .tituloProdEsp{
@@ -22,5 +21,14 @@ h3 .tituloProdEsp{
 p .txt-ProdEsp{
     text-align: justify;
     margin-bottom: 200px;
+}
+
+a .linkCompra{
+    cursor: pointer;
+}
+
+a .linkCompra:hover{
+    padding-left: 5px;
+    box-shadow: 0 0 5 5 black;
 }
 
