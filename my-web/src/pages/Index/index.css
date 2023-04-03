@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Loto',sans-serif;
+}
+
+body{
+    background-color: #F2F4FA;
+}
+
+nav{
+    display:flex; 
+    justify-content: space-around;
+    align-items: center;
+    height: 22vh; /* o vh representa o quanto de uma tela a section irá consumir */
+    width: 100%;
+    flex-wrap: wrap;
+   
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px; /* cada valor representa um margem diferente */
+
+}
+
+nav ul li a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold; /*é possível por números em font-weight ex: 500 */
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease; /* esse comando suaviza a transição de uma animação */
+    cursor: pointer;
+
+}
+
+nav ul li a.active{
+    background-color: black;
+    color:white;
+}
+
+nav ul li a:hover{
+    background-color: #87C65C;
+    color:white;
+}
+
+nav .menu-btn i{
+    color:black;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 920px){
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;            
+        top:190px;                  /*muda a altura do menu de hamburguer*/
+        left: -700px;               /*muda a posição a esquerda do menu de hamburguer */
+        background-color:#F2F4FA;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;  
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a{
+        font-size: 23px;
+        
+    }
+    nav ul li a.active{
+        background-color: black;
+        color:white; 
+    }
+    
+    nav ul li a:hover{
+        background-color: #87C65C;
+        color:white;
+    }
+}
+
+.main-col .texto-cardIndex{
+    text-align: justify;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.main-col-cardDois .texto-cardIndex{
+    text-align: justify;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+.main-col-cardDois h3 .titulocards{
+    font-weight: bolder;
+}
+
+p .subtextosMenoresInicial{
+    text-align: justify;
+    margin-top: 25px;
+}
+
+footer{
+    background-color: #F2F4FA;
+    padding: 50px 0;
+}
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin:auto;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+/*Início da custumização da primeira coluna do footer*/
+.footer-col1{
+    width: 15%;
+    padding: 0 15px;
+}
+
+.footer-col1 h4{
+    color:black;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    position: relative;
+
+}
+
+.footer-col1 ul{
+    list-style: none;
+}
+
+.footer-col1 ul li{
+    margin: 10px 0;
+}
+
+.footer-col1 ul li a{
+    font-size: 14px;
+    color:black;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s;
+}
+
+.footer-col1 ul li a:hover{
+    cursor: pointer;
+    font-weight: bold;
+    padding-left: 5px;
+    background-color: #87C65C;
+    color:white;
+}
+/*Fim da primeira coluna footer*/
+
+/*Começo da segunda coluna do footer*/
+.footer-col2{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.footer-col2 h2{
+    text-align: center;
+    margin-top: 30px;
+}
+/*Final da segunda coluna do footer*/
+
+/*Começo da terceira coluna do footer*/
+.footer-col3{
+    width: 100%;
+    padding: 0 15px;
+}
+
+.footer-col3 .mapa{
+    position: center;
+    width: 100%;
+    margin-top: 25px; 
+}
+
+/*Final da terceira coluna do footer*/
+
+/*Começo da quarta coluna do footer*/
+.footer-col4{
+    width: 20%;
+    padding: 0 15px;
+    margin-top:35px;
+}
+/*Final da quarta coluna do footer*/
+
+.main-row{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media(max-width: 920px){
+    .main-row{
+        display: block;
+        justify-content: center;
+    }
+}
+
+
+.main-col{
+    width:50%;
+    padding: 0 15px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.main-col-Um{
+    width:35%;
+    padding: 0 15px;
+    line-height: 25px;
+    text-align: center;
+    background-color: 	#D3D3D3;
+    border-radius: 25px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.main-col-sociais{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.icone-facebook{
+    margin-right: 10px;
+}
+
+.titulo-paginicial{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: black;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    margin-top: 40px;
+    line-height: 1.0;
+}
+.subtextosInicial{
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: black;
+    text-align: justify;
+}
+
+#btn-conceitosPagInicial{
+    border-radius:15px;
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    justify-content: left;
+}
+
+#btn-conceitosPagInicial:hover{
+    background-color: #87C65C;
+    padding-left: 2px;
+    border-color: #87C65C;
+    box-shadow: #87C65C;
+}
+
+.main-colSlide{
+    overflow: hidden;
+    width:100%;
+    height: 350px;
+    padding: 0 15px;
+    margin:25px auto;
+}
+
+.slides{
+    width: 100%;
+    display: flex;
+    height: 350px;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width:25%;
+    position: relative;
+    transition: 2s ease;
+}
+
+.slide img{
+    width: 100%;
+}
+
+.manual-navigation{
+    position:absolute;
+    width: 100%;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    background-color: #87C65C;
+    border:2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    width: 30px;
+}
+
+.manual-btn:hover{
+    background-color: black;
+    border: 2px solid white;
+    transition: all 0.8s ease;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+
+#radio2:checked ~ .first{
+    margin-left:-25%;
+}
+
+#radio3:checked ~ .first{
+    margin-left:-50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left:-75%;
+}
+
+.main-colttl{
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.subtituloInicial{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.titulo-redesociais{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.titulocards{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.main-col-card-Dois{
+    background-image: linear-gradient(#87C65C,#5D994D);
+    color: white;
+    width:35%;
+    padding: 0 15px;
+    line-height: 25px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+.main-col-card-Tres{
+    background-image: linear-gradient(#87C65C,#5D994D);
+    color: white;
+    width:35%;
+    padding: 0 15px;
+    line-height: 25px;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main-col-Quatro{
+    width:35%;
+    padding: 0 15px;
+    line-height: 25px;
+    text-align: center;
+    background-color: 	#D3D3D3;
+    border-radius: 25px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.total-fim-inicial{
+    background-color: black;
+    display: flex;
+    width: 100%;
+}
+
+.main-finalcol-um{
+    width:40%;
+    padding: 0 15px;
+    background-color: darkgray;
+    display: block;
+    text-align: center;
+    height: 60vh;
+    margin-top: 8vh;
+    margin-left: 4vh;
+}
+
+.main-finalcol-um h2{
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+.main-finalcol-um h4{
+    margin-top: 4vh;
+    text-align: center;
+    font-size:large;
+}
+
+.main-finalcol-um img{
+   margin-top: 4vh;
+   margin-bottom:4vh;
+}
+
+.main-finalcol-um .btn-baixar-app{
+    width: 25%;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #87C65C;
+    color: white;
+    font-weight: bold;
+    background-color: #87C65C;
+}
+
+.main-finalcol-dois{
+    width: 60%;
+    padding: 0 15px;
+    background-color: black;
+}
+
