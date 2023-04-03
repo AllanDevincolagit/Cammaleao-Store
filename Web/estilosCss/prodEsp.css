@@ -1,0 +1,26 @@
+.main-row-prodEsp{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.main-col-prodEsp{
+    width:50%;
+    height: 600px;
+    padding: 0 15px;
+    text-align:center;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+h3 .tituloProdEsp{
+    margin-top: 20px;
+    font-size: 700px;
+}
+
+p .txt-ProdEsp{
+    text-align: justify;
+    margin-bottom: 200px;
+}
+
