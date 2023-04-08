@@ -11,7 +11,9 @@ export default function Routes() {
       <Route path="/" exact component={Index} />     
 
     </Switch> <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+    
     <Footer /> 
+
     </BrowserRouter>
   )
 }
