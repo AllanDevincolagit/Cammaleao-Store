@@ -8,7 +8,7 @@ function Nav() {
     <nav>
       <div className="logo">
         <Link to="/">
-          <img src="/public/Favicon.png" alt="Logo" />
+          <img src="../../assets/img/logo-24.png" alt="Logo" />
         </Link>
       </div>
       <ul>
