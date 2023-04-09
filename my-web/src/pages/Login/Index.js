@@ -15,28 +15,40 @@ export default function Login(){
    <div className="logon-container">
 
        <div className="container-ilustracao">
+
         <img src={LogoMarcaImg} alt="Camaleao" />
+        
        </div>
 
      <section className="form">  
-     <img src={logoImg} alt="Camaleao Store" />
+
 
     <form>
 
+    <img src={logoImg} alt="Camaleao Store" />
+
       <h1>Faça seu Login</h1>
-      <input placeholder="Seu E-mail" />
+
+      <input placeholder="Seu E-mail" /> <p></p>
+
       <input placeholder="Digite sua senha" type='password' name='password' id='password'/>
+
       <button className="button" type="submit">Entrar</button>
+
+      <Link className="back-link" to="/recuperar">
+        <FiLogIn size={16} color="#87C65C" />
+        Recuperar Senha
+      </Link>     
 
       <Link className="back-link" to="/register">
         <FiLogIn size={16} color="#87C65C" />
         Não tenho cadastro
       </Link>
+
     </form>
+
   </section>
 
- 
-  
    </div>   
   );
 }
