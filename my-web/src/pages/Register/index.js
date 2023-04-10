@@ -18,7 +18,7 @@ export default function Register() {
       <h1>Faça seu Cadastro</h1>
       <p>Faça seu cadastro, entre na plataforma.</p>
       
-      <Link className="back-link" to="/">
+      <Link className="back-link" to="/login">
         <FiArrowLeft size={16} color="#87C65C" />
         Já tenho cadastro
       </Link>
@@ -26,7 +26,7 @@ export default function Register() {
 
     <form >
       <input placeholder="Nome Completo"/>
-      <input placeholder="Digite sua senha" type='password' />
+      <input placeholder="Digite sua senha"  />
       <input type="email" placeholder="E-mail" />
       <input type="CPF" placeholder="CPF" />
       <input type="Endereco" placeholder="Endrenço" />
