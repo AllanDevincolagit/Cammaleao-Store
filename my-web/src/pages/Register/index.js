@@ -26,7 +26,7 @@ export default function Register() {
 
     <form >
       <input placeholder="Nome Completo"/>
-      <input placeholder="Digite sua senha" type='password' name='password' id='password'/>
+      <input placeholder="Digite sua senha" type='password' />
       <input type="email" placeholder="E-mail" />
       <input type="CPF" placeholder="CPF" />
       <input type="Endereco" placeholder="Endrenço" />
@@ -34,9 +34,7 @@ export default function Register() {
       <div className="input-group">
         <input placeholder="Cidade"/>
         <input placeholder="UF" style={{width: 80}}/>
-      </div>
-
-  
+      </div>  
 
       <button className="button" type="submit">Cadastrar</button>
     </form>    

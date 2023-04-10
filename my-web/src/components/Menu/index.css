@@ -19,7 +19,15 @@ nav{
     flex-wrap: wrap;
    
 }
-
+.img {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .login-img > * {
+    margin-left: 0.5rem;
+  }
 nav ul{
     display: flex;
     flex-wrap: wrap;

@@ -31,7 +31,7 @@ export default function Login(){
 
       <input placeholder="Seu E-mail" /> <p></p>
 
-      <input placeholder="Digite sua senha" type='password' name='password' id='password'/>
+      <input placeholder="Digite sua senha" type='password'/>
 
       <button className="button" type="submit">Entrar</button>
 
