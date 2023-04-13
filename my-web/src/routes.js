@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import Home from './pages/Home';
 import Login from './pages/Login/Index';
-import Register from './pages/Register/Index';
+import Register from './pages/Register/index';
 import Recuperar from './pages/Recuperar/Index'
 import QuemSomos from './components/PageSomos/Index';
 import PagePersonalizado from './components/PagePersonalizado/Index';
