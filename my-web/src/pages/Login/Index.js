@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiLogIn , FiArrowLeft} from 'react-icons/fi';
+import { FiLogIn} from 'react-icons/fi';
 
 import './styles.css';
 
@@ -21,6 +21,11 @@ export default function Login(){
       <Link className="back-link" to="/register">
         <FiLogIn size={16} color="#87C65C" />
         Não tenho cadastro
+      </Link>
+
+      <Link className="back-link" to="/recuperar">
+        <FiLogIn size={16} color="#87C65C" />
+       Recuperar minha Senha?
       </Link>
     </section>
 

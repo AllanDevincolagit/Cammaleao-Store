@@ -7,8 +7,8 @@ import Footer from '../../components/Footer/Index';
 function Home() {
   return (
     <>
-      <Menu /><tr> 
-      <br /> </tr>
+      <Menu />
+      <br /> 
       <Carousel />  <br />
 
       <PageDefault />

@@ -6,7 +6,6 @@ import './styles.css';
 
 import  logoImg from '../../assets/img/logo-24.png';
 
-
 export default function Register() {
 
   return  (

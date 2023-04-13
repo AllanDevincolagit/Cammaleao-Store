@@ -18,13 +18,13 @@ function Menu() {
           <Link to="/">HOME</Link>
         </li>
         <li>
-          <Link to="/">SHOP</Link>
+          <Link to="/shop">SHOP</Link>
         </li>
         <li>
-          <Link to="/">CONCEITOS</Link>
+          <Link to="/conceitos">CONCEITOS</Link>
         </li>
         <li>
-          <Link to="/">PEDIDOS PERSONALIZADOS</Link>
+          <Link to="/personalizado">PEDIDOS PERSONALIZADOS</Link>
         </li>
         <li><Link to="/login"><FaUserCircle/></Link></li>
       </ul>
