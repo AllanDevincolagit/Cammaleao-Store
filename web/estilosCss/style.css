@@ -286,6 +286,7 @@ footer{
     padding-left: 2px;
     border-color: #87C65C;
     box-shadow: #87C65C;
+    cursor: pointer;
 }
 
 .main-colSlide{
@@ -375,7 +376,7 @@ footer{
 .titulo-redesociais{
     text-align: center;
     font-size: xx-large;
-    margin-top: 25px;
+    margin-top: 25px; 
     margin-bottom: 25px;
 }
 

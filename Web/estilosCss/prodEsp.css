@@ -21,6 +21,8 @@ h3 .tituloProdEsp{
 p .txt-ProdEsp{
     text-align: justify;
     margin-bottom: 200px;
+    font-size: large;
+    font-weight: bold;
 }
 
 a .linkCompra{
