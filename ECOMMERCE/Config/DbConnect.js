@@ -1,5 +1,11 @@
 const { default: mongoose } = require("mongoose")
 
-const dcConenect = () => {
-  const conn = mongoose.connect('')
-}
+const dbConnect = () => {
+  try {
+  const conn = mongoose.connect('mongodb://localhost:27017/storedb');
+  console.log("Database Connected Successfully");
+} catch(error) {
+  console.log("Database error")
+  }
+};
+module.exports = dbConnect;
