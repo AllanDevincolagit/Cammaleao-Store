@@ -8,7 +8,7 @@
     "start": "node index.js",
     "server": "nodemon index.js"
   },
-  "author": "",
+  "author": "Maicon Douglas",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -16,7 +16,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
-    "mongoose": "^7.0.4"
+    "mongoose": "^7.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
