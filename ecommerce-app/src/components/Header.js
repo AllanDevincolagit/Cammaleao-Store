@@ -14,35 +14,37 @@ const Header = () => {
           <div className="row">
             <div className="col-6">
               <p className="text-white mb-0">
-                Free Shipping Over $100 & Free Returns
+                Não perca tempo confira nossas promoções, 
               </p>
             </div>
             <div className="col-6">
               <p className="text-end text-white mb-0">
-                Hotline:
-                <a className="text-white" href="tel:+91 8264954234">
-                  +91 8264954234
+                Contato:
+                <a className="text-white" href="tel:+55 16994575967">
+                  +55 16994575967
                 </a>
               </p>
             </div>
           </div>
         </div>
       </header>
+      
       <header className="header-upper py-3">
         <div className="container-xxl">
           <div className="row align-items-center">
             <div className="col-2">
               <h2>
-                <Link className="text-white">Dev Corner</Link>
+                <Link className="text-white">Camaleão Store</Link>
               </h2>
             </div>
+
             <div className="col-5">
               <div className="input-group">
                 <input
                   type="text"
                   className="form-control py-2"
-                  placeholder="Search Product Here..."
-                  aria-label="Search Product Here..."
+                  placeholder="Pesquise aqui o produto.."
+                  aria-label="Pesquise aqui o produto.."
                   aria-describedby="basic-addon2"
                 />
                 <span className="input-group-text p-3" id="basic-addon2">
@@ -50,6 +52,7 @@ const Header = () => {
                 </span>
               </div>
             </div>
+
             <div className="col-5">
               <div className="header-upper-links d-flex align-items-center justify-content-between">
                 <div>
@@ -59,18 +62,18 @@ const Header = () => {
                   >
                     <img src={compare} alt="compare" />
                     <p className="mb-0">
-                      Compare <br /> Products
+                      Comparar <br />
                     </p>
                   </Link>
                 </div>
                 <div>
                   <Link
-                    to="/wishlist"
+                    to="/favoritos"
                     className="d-flex align-items-center gap-10 text-white"
                   >
                     <img src={wishlist} alt="wishlist" />
                     <p className="mb-0">
-                      Favourite <br /> wishlist
+                      Favoritos <br />
                     </p>
                   </Link>
                 </div>
@@ -81,7 +84,7 @@ const Header = () => {
                   >
                     <img src={user} alt="user" />
                     <p className="mb-0">
-                      Log in <br /> My Account
+                      Login  <br /> 
                     </p>
                   </Link>
                 </div>
@@ -93,7 +96,7 @@ const Header = () => {
                     <img src={cart} alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0">$ 500</p>
+                      <p className="mb-0"></p>
                     </div>
                   </Link>
                 </div>
@@ -102,6 +105,7 @@ const Header = () => {
           </div>
         </div>
       </header>
+
       <header className="header-bottom py-3">
         <div className="container-xxl">
           <div className="row">
@@ -118,7 +122,7 @@ const Header = () => {
                     >
                       <img src={menu} alt="" />
                       <span className="me-5 d-inline-block">
-                        Shop Categories
+                        Shop Categorias
                       </span>
                     </button>
                     <ul
@@ -146,9 +150,9 @@ const Header = () => {
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-15">
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/product">Our Store</NavLink>
+                    <NavLink to="/product">Loja</NavLink>
                     <NavLink to="/blogs">Blogs</NavLink>
-                    <NavLink to="/contact">Contact</NavLink>
+                    <NavLink to="/contact">Contato</NavLink>
                   </div>
                 </div>
               </div>

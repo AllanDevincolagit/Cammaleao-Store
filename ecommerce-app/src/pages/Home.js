@@ -59,7 +59,7 @@ const Home = () => {
               </div>
               <div className="small-banner position-relative ">
                 <img
-                  src="images/catbanner-03.jpg"
+                  src="./images/catbanner-03.jpg"
                   className="img-fluid rounded-3"
                   alt="main banner"
                 />
@@ -89,12 +89,13 @@ const Home = () => {
           </div>
         </div>
       </Container>
+
       <Container class1="home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
             <div className="servies d-flex align-items-center justify-content-between">
              
-                return (
+                
                   <div className="d-flex align-items-center gap-15" >
                    
                     <div>
@@ -102,12 +103,13 @@ const Home = () => {
                     
                     </div>
                   </div>
-                );
-              })}
+                
+           
             </div>
           </div>
         </div>
       </Container>
+      
       <Container class1="home-wrapper-2 py-5">
         <div className="row">
           <div className="col-12">
