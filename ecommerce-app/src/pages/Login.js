@@ -23,23 +23,28 @@ const Login = () => {
                   name="password"
                   placeholder="Password"
                 />
+                
                 <div>
-                  <Link to="/forgot-password">Forgot Password?</Link>
+                  <Link to="/forgot-password">Esqueceu sua senha?</Link>
 
                   <div className="mt-3 d-flex justify-content-center gap-15 align-items-center">
                     <button className="button border-0" type="submit">
                       Login
                     </button>
-                    <Link to="/signup" className="button signup">
-                      SignUp
+
+                    <Link to="/signup" className="button inscrever-se">
+                    Inscrever-se
                     </Link>
+
                   </div>
                 </div>
               </form>
             </div>
           </div>
         </div>
+
       </Container>
+
     </>
   );
 };
