@@ -9,7 +9,7 @@ const notFound = ( req, res, next ) => {
 // Error Handler
 
 const errorHandler = ( err, req, res, next) => {
-  const statuscode = res.statusCode ==200 ? 500 : res.statusCode;
+  const statuscode = res.statusCode == 200 ? 500 : res.statusCode;
   req.status(statuscode);
   res.json({
     message: err?.message,
