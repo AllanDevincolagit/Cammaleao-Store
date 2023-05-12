@@ -16,20 +16,18 @@ const OurStore = () => {
         <div className="row">
           <div className="col-3">
             <div className="filter-card mb-3">
-              <h3 className="filter-title">Shop By Categories</h3>
+              <h3 className="filter-title">Shop Categorias</h3>
               <div>
                 <ul className="ps-0">
-                  <li>Watch</li>
-                  <li>Tv</li>
-                  <li>Camera</li>
-                  <li>Laptop</li>
+                  <li>Canecas Personalizadas</li>
+                  <li>Canecas</li>
                 </ul>
               </div>
             </div>
             <div className="filter-card mb-3">
-              <h3 className="filter-title">Filter By</h3>
+              <h3 className="filter-title">Filtro</h3>
               <div>
-                <h5 className="sub-title">Availablity</h5>
+                <h5 className="sub-title">Avaliação</h5>
                 <div>
                   <div className="form-check">
                     <input
@@ -54,7 +52,7 @@ const OurStore = () => {
                     </label>
                   </div>
                 </div>
-                <h5 className="sub-title">Price</h5>
+                <h5 className="sub-title">Preço</h5>
                 <div className="d-flex align-items-center gap-10">
                   <div className="form-floating">
                     <input
@@ -107,7 +105,7 @@ const OurStore = () => {
               </div>
             </div>
             <div className="filter-card mb-3">
-              <h3 className="filter-title">Product Tags</h3>
+              <h3 className="filter-title">Produtos Tags</h3>
               <div>
                 <div className="product-tags d-flex flex-wrap align-items-center gap-10">
                   <span className="badge bg-light text-secondary rounded-3 py-2 px-3">
@@ -147,7 +145,7 @@ const OurStore = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <b>R$: 300</b>
                   </div>
                 </div>
                 <div className="random-products d-flex">
@@ -169,7 +167,7 @@ const OurStore = () => {
                       edit={false}
                       activeColor="#ffd700"
                     />
-                    <b>$ 300</b>
+                    <b>R$: 300</b>
                   </div>
                 </div>
               </div>

@@ -9,6 +9,7 @@ const CompareProduct = () => {
   return (
     <>
       <Meta title={"Compare Products"} />
+      
       <BreadCrumb title="Compare Products" />
       <Container class1="compare-product-wrapper py-5 home-wrapper-2">
         <div className="row">

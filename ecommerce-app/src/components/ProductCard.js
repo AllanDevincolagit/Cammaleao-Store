@@ -8,6 +8,7 @@ import watch from "../images/watch.jpg";
 import watch2 from "../images/watch-1.avif";
 import addcart from "../images/add-cart.svg";
 import view from "../images/view.svg";
+
 const ProductCard = (props) => {
   const { grid } = props;
   console.log(grid);
@@ -35,10 +36,12 @@ const ProductCard = (props) => {
               <img src={wish} alt="wishlist" />
             </button>
           </div>
+
           <div className="product-image">
             <img src={watch} className="img-fluid" alt="product image" />
             <img src={watch2} className="img-fluid" alt="product image" />
           </div>
+          
           <div className="product-details">
             <h6 className="brand">Havels</h6>
             <h5 className="product-title">

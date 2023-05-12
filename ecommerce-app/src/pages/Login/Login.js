@@ -1,21 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BreadCrumb from "../components/BreadCrumb";
-import Meta from "../components/Meta";
-import Container from "../components/Container";
-import CustomInput from "../components/CustomInput";
+import BreadCrumb from "../../../src/components/BreadCrumb";
+import Meta from "../../../src/components/Meta";
+import Container from "../../../src/components/Container";
+import CustomInput from "../../../src/components/CustomInput";
+import './style.css';
 
 const Login = () => {
   return (
     <>
-      <Meta title={"Login"} />
+      <Meta title={"Login | Camaleão Store "} />
       <BreadCrumb title="Login" />
 
       <Container class1="login-wrapper py-5 home-wrapper-2">
         <div className="row">
           <div className="col-12">
             <div className="auth-card">
-              <h3 className="text-center mb-3">Login</h3>
+              <h3 className="text-center mb-3">LOGIN</h3>
               <form action="" className="d-flex flex-column gap-15">
                 <CustomInput type="email" name="email" placeholder="Email" />
                 <CustomInput

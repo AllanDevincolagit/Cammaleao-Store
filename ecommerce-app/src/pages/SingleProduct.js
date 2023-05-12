@@ -10,6 +10,7 @@ import { AiOutlineHeart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import watch from "../images/watch.jpg";
 import Container from "../components/Container";
+
 const SingleProduct = () => {
   const props = {
     width: 594,

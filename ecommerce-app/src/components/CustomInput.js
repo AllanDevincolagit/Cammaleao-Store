@@ -1,8 +1,12 @@
 import React from "react";
 
 const CustomInput = (props) => {
-  const { type, name, placeholder, classname } = props;
+  const { type, 
+          name,
+          placeholder, 
+          classname } = props;
   return (
+
     <div>
       <input
         type={type}
@@ -10,6 +14,7 @@ const CustomInput = (props) => {
         placeholder={placeholder}
         className={`form-control ${classname}`}
       />
+      
     </div>
   );
 };
